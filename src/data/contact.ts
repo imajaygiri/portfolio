@@ -19,8 +19,8 @@ export const contactItems: ContactItem[] = [
   },
   {
     name: 'Email',
-    label: 'sinexcosec@gmail.com',
-    href: 'mailto:sinexcosec@gmail.com',
+    label: 'sinexcosecx@gmail.com',
+    href: 'mailto:sinexcosecx@gmail.com',
     accent: 'red',
     external: false,
     isPlaceholder: false,
