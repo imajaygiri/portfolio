@@ -1,0 +1,168 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Accent color system including signature Arpit-style Red */
+  --color-accent-red: var(--accent-red);
+  --color-accent-red-subtle: var(--accent-red-subtle);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-blue-subtle: var(--accent-blue-subtle);
+  --color-accent-cyan: var(--accent-cyan);
+  --color-accent-cyan-subtle: var(--accent-cyan-subtle);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-purple-subtle: var(--accent-purple-subtle);
+  --color-accent-green: var(--accent-green);
+  --color-accent-green-subtle: var(--accent-green-subtle);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-orange-subtle: var(--accent-orange-subtle);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #111111;
+  --card: #FFFFFF;
+  --card-foreground: #111111;
+  --popover: #FFFFFF;
+  --popover-foreground: #111111;
+  --primary: #FA0000;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F3F4F6;
+  --secondary-foreground: #111111;
+  --muted: #F3F4F6;
+  --muted-foreground: #555555;
+  --accent: #FEE2E2;
+  --accent-foreground: #FA0000;
+  --destructive: #DC2626;
+  --border: #E2E4E8;
+  --input: #E2E4E8;
+  --ring: #FA0000;
+  --radius: 0.25rem;
+
+  /* Signature Red & Supporting Colors - Light */
+  --accent-red: #FA0000;
+  --accent-red-subtle: rgba(250, 0, 0, 0.05);
+  --accent-blue: #1D4ED8;
+  --accent-blue-subtle: rgba(29, 78, 216, 0.05);
+  --accent-cyan: #0E7490;
+  --accent-cyan-subtle: rgba(14, 116, 144, 0.05);
+  --accent-purple: #6D28D9;
+  --accent-purple-subtle: rgba(109, 40, 217, 0.05);
+  --accent-green: #047857;
+  --accent-green-subtle: rgba(4, 120, 87, 0.05);
+  --accent-orange: #C2410C;
+  --accent-orange-subtle: rgba(194, 65, 12, 0.05);
+
+  --sidebar: #FAFAFA;
+  --sidebar-foreground: #111111;
+  --sidebar-primary: #FA0000;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #FEE2E2;
+  --sidebar-accent-foreground: #FA0000;
+  --sidebar-border: #E2E4E8;
+  --sidebar-ring: #FA0000;
+}
+
+.dark {
+  --background: #0D0E11;
+  --foreground: #F0F2F5;
+  --card: #13151A;
+  --card-foreground: #F0F2F5;
+  --popover: #13151A;
+  --popover-foreground: #F0F2F5;
+  --primary: #FF6B6B;
+  --primary-foreground: #0D0E11;
+  --secondary: #1A1D24;
+  --secondary-foreground: #F0F2F5;
+  --muted: #1A1D24;
+  --muted-foreground: #8C93A0;
+  --accent: #2E1517;
+  --accent-foreground: #FF6B6B;
+  --destructive: #EF4444;
+  --border: #222630;
+  --input: #222630;
+  --ring: #FF6B6B;
+
+  /* Signature Red & Supporting Colors - Dark */
+  --accent-red: #FF6B6B;
+  --accent-red-subtle: rgba(255, 107, 107, 0.08);
+  --accent-blue: #60A5FA;
+  --accent-blue-subtle: rgba(96, 165, 250, 0.08);
+  --accent-cyan: #38BDF8;
+  --accent-cyan-subtle: rgba(56, 189, 248, 0.08);
+  --accent-purple: #A78BFA;
+  --accent-purple-subtle: rgba(167, 139, 250, 0.08);
+  --accent-green: #34D399;
+  --accent-green-subtle: rgba(52, 211, 153, 0.08);
+  --accent-orange: #FB923C;
+  --accent-orange-subtle: rgba(251, 146, 60, 0.08);
+
+  --sidebar: #0D0E11;
+  --sidebar-foreground: #F0F2F5;
+  --sidebar-primary: #FF6B6B;
+  --sidebar-primary-foreground: #0D0E11;
+  --sidebar-accent: #2E1517;
+  --sidebar-accent-foreground: #FF6B6B;
+  --sidebar-border: #222630;
+  --sidebar-ring: #FF6B6B;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth font-sans text-foreground bg-background;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply min-h-screen bg-background text-foreground antialiased selection:bg-accent-red/20 selection:text-accent-red;
+  }
+}

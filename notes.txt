@@ -1,0 +1,11 @@
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   ├── CurrentFocus.tsx
+│   └── Footer.tsx
+│
+├── App.tsx
+└── index.css
