@@ -66,7 +66,7 @@ export default function Footer() {
             &copy; {siteConfig.copyrightYear} {siteConfig.name}. Designed as an open technical ledger.
           </p>
           <p className="text-[11px] text-muted-foreground/75">
-            Inspired by Arpit Bhayani &middot; Built for Ajay Giri
+            Inspired by  Ajay Giri &middot; Built for Ajay Giri
           </p>
         </div>
       </div>
