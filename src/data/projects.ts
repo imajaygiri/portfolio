@@ -38,6 +38,40 @@ export const projects: Project[] = [
     writeupUrl: '#',
   },
   {
+    id: 'ast-parser',
+    title: 'Recursive Descent AST Parser',
+    category: 'COMPILERS & SYNTAX',
+    language: 'Go',
+    description:
+      'Handwritten lexical analyzer and Abstract Syntax Tree (AST) recursive descent parser in Go. Tokenizes source characters, evaluates operator precedence with precedence climbing, and constructs strongly-typed syntax trees for statements, expressions, and control structures.',
+    technologies: ['Go', 'Lexer', 'AST', 'Recursive Descent', 'Syntax Analysis'],
+    accent: 'green',
+    spec: {
+      interface: 'Source Code Stream & Tokenizer',
+      protocol: 'Custom Statement & Expression Grammar',
+      ioModel: 'Multi-token lookahead with error recovery',
+      state: 'Typed Abstract Syntax Tree nodes',
+    },
+    githubUrl: 'https://github.com/imajaygiri/parser',
+  },
+  {
+    id: 'compiler-frontend',
+    title: 'Compiler Frontend & Tokenizer',
+    category: 'LANGUAGES & RUNTIMES',
+    language: 'Go',
+    description:
+      'Experimental compiler exploring lexical analysis, character scanning, and compiler frontend architecture in Go. Implements character stream scanners, token classification routines, and structured syntax error diagnostics.',
+    technologies: ['Go', 'Compiler Frontend', 'Token Scanning', 'Grammar', 'Syntax Trees'],
+    accent: 'orange',
+    spec: {
+      interface: 'Character Stream & Unicode Scanner',
+      protocol: 'Lexical Specification & Token Grammar',
+      ioModel: 'Single-pass character tokenizer',
+      state: 'Lexical tokens with line & column tracking',
+    },
+    githubUrl: 'https://github.com/imajaygiri/compiler',
+  },
+  {
     id: 'ride-platform',
     title: 'Distributed Ride Dispatch Platform',
     category: 'BACKEND ARCHITECTURE',
