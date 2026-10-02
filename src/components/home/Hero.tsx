@@ -114,7 +114,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-1.5 rounded-xs border border-border bg-card px-3 py-1.5 font-medium text-muted-foreground transition-all hover:border-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <FileText className="size-3.5" />
-                <span>Curriculum Vitae</span>
+                <span>Resume</span>
               </a>
             </div>
           </div>
